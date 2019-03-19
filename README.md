@@ -321,6 +321,18 @@ for training_indices, testing_indices in folder.split(X):
 
 ## Part 3
 
+Pipeline1 (LogisticRegression) 
+* We think this model is going to be the most accurate, since we're dealing with two binary values 'male and female'. 
+
+Pipeline2 (SVC/SupportVectorMachine) 
+* Since the SVM is an algorith used for classification proglems just as the LR model above in Pipeline1, we assumed that it would preform very close/comparable to eachother. 
+
+Pipeline3 (DecisionTreeClassifier) 
+* The DecisionTreeClassifier model would get more use if the continious variables would get transformed into categorial ones, therefore we expect this classification model to perform worse than the other alternatives. 
+
+Pipeline4 (KNeighborsClassifier) 
+* We're not so sure about this model, but it might have something with the possibility that male and female voices are less likely to be under the same human vocal range, most of the time, that would make this model perform slightly worse than it's counterparts. 
+
 
 ```python
 from sklearn.linear_model import LogisticRegression
@@ -336,7 +348,7 @@ pipeline3 = make_pipeline(StandardScaler(), DecisionTreeClassifier())
 pipeline4 = make_pipeline(StandardScaler(), KNeighborsClassifier(n_neighbors=5))
 ```
 
-## Part4
+## Part 4
 
 What does "score" mean?
 The score is a comparison between the labels that a model has predicted for a training set and the actual real labels. It is given as a value from 0 to 1, and can also be viewed as percentage of correctness.
