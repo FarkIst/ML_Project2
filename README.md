@@ -92,7 +92,7 @@ print(np.array(y))
 X = np.array(data.drop(["label"],axis=1))
 print(X)
 ```
-<details>
+<Output>
 
           meanfreq        sd    median       Q25       Q75       IQR       skew  \
     0     0.059781  0.064241  0.032027  0.015071  0.090193  0.075122  12.863462   
@@ -283,9 +283,10 @@ print(X)
     3166  0.250000  0.791360  0.007812  3.593750  3.585938  0.311002  
     3167  0.271186  0.227022  0.007812  0.554688  0.546875  0.350000  
  
- </details>
+ </Output>
+
     [3168 rows x 20 columns]
-    
+
 
 
 ```python
