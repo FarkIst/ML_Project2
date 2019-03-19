@@ -376,6 +376,16 @@ for model in [pipeline1 ,pipeline2, pipeline3, pipeline4]:
 
 ## Part 5
 
+Scaling
+* We've already fitted our existing pipelines with "StandardScaler" from Part 3/4 and used the default classification values.This is due to some exceptions we would receive when not using the "StandardScaler". 
+The "StandardScaler" is used to normalize the data, which is also the purpose of "Scaling" - To standardize the range of values or features of data. 
+
+Predictions
+* Overall I feel like our predictions we're quite on the target. 
+Logistic Regression being the most accurate and Decision Tree performing worse than the alternatives. 
+KNN didn't do too good as predicted too, while SVM being the most similar to the Logistic model did as we expected. 
+
+To clarify, the output of the code in this part shows the "Mean Value" for each classification model. 
 
 ```python
 from sklearn.model_selection import cross_val_score
