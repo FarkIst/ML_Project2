@@ -7,7 +7,9 @@
 
 A frequency refers to the pitch of the voice. In the dataset it is meanfreq so we assume it is the average of the frequency of the voice over a recording's time.
 
-A median refers to the point that seperates the higher half of the sample from the lower half, in this case we assume it i
+A median refers to the point that seperates the higher half of the sample from the lower half, in this case we assume it is the middle value of the sorted dataset.
+
+An output label is used to determine which sex the voice belongs to.
 
 ## Part 2
 
